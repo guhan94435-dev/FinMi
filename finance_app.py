@@ -94,10 +94,7 @@ if uploaded_file is not None:
             st.write(f"- **Market Sentiment:** PSU Sector confidence index contributes { (sentiment_impact-1)*100:+.1f}% to the top-line projection.")
         
         with exp_col2:
-            st.info(f"""
-            **Early Warning Indicator:**
-            The model suggests that if Inflation stays above 9% and Monsoon is '{monsoon_impact}', KEL's profitability recovery trajectory will be impacted by approximately {(1 - inflation_impact)*12:.1f} months.
-            """)
+            st.info(f"**Early Warning Indicator:** The model suggests that if Inflation stays above 9% and Monsoon is '{monsoon_impact}', KEL's profitability recovery trajectory will be impacted by approximately {(1 - inflation_impact)*12:.1f} months.")
 
         # --- NEW: STRATEGIC SENSITIVITY MATRIX ---
         st.subheader("📊 Strategic Sensitivity Matrix (Risk Map)")
